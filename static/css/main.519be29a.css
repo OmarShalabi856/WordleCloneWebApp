@@ -201,6 +201,8 @@ code {
     font-size: 15px;
     margin-bottom: 5px;
     -webkit-tap-highlight-color: transparent;
+    outline: none;
+    cursor: default;
   }
 
   .Keyboard {
@@ -211,7 +213,9 @@ code {
     position: absolute;
     bottom: 0;
     width: 100%;
-    -webkit-tap-highlight-color: transparent;
+    -webkit--highlight-color: transparent;
+    outline: none;
+    cursor: default;
   }
 
   .Grid {
