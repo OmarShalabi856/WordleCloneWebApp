@@ -131,6 +131,17 @@ code {
   transition: background-position 1.2s;
   background-position: 100%;
 }
+
+.Special {
+  width: 4.5em;
+  height: 4.3em;
+  background-color: #ccc;
+  color: black;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+  grid-column: span 2;
+}
 .Keyletters {
   width: 2.1em;
   max-width: 100%;
@@ -142,17 +153,7 @@ code {
   font-weight: bold;
   font-size: 15px;
   margin-bottom: 5px;
-}
-
-.Special {
-  width: 4.5em;
-  height: 4.3em;
-  background-color: #ccc;
-  color: black;
-  border-radius: 6px;
-  text-align: center;
-  font-weight: bold;
-  grid-column: span 2;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .Keyboard {
@@ -165,9 +166,7 @@ code {
   width: 100%;
   -webkit-tap-highlight-color: transparent;
 }
-.Keyboard:hover {
-  cursor: pointer;
-}
+
 .text {
   display: block;
   margin-top: 15%;
@@ -190,6 +189,31 @@ code {
   position: absolute;
 }
 @media screen and (max-width: 500px) {
+  .Keyletters {
+    width: 2.1em;
+    max-width: 100%;
+    height: 4.3em;
+    background-color: #ccc;
+    color: black;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 5px;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .Keyboard {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    gap: 4px;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
+  }
+
   .Grid {
     width: 90%;
     height: 90%;
@@ -379,5 +403,3 @@ code {
     background-position: 100%;
   }
 }
-
-/*# sourceMappingURL=main.519be29a.css.map*/
